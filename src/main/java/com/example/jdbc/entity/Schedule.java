@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @AllArgsConstructor
-public class Memo {
+public class Schedule {
     @Setter
 
     private Long id;

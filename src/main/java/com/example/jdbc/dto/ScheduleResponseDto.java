@@ -3,12 +3,12 @@ package com.example.jdbc.dto;
 import lombok.Getter;
 
 @Getter
-public class MemoResponseDto {
+public class ScheduleResponseDto {
 
     private final Long id;
     private final String content;
 
-    public MemoResponseDto(Long id, String content) {
+    public ScheduleResponseDto(Long id, String content) {
         this.id = id;
         this.content = content;
     }
