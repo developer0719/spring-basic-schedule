@@ -1,15 +1,10 @@
 package com.example.jdbc.repository;
 
 import com.example.jdbc.entity.Schedule;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import java.awt.*;
-import java.util.Optional;
+@Repository
+public interface ScheduleRepository extends CrudRepository<Schedule, Long> {
 
-public interface ScheduleRepository {
-
-    Schedule save(Schedule schedule);
-    Optional<Schedule> findById(Long id);
-    List<Schedule> findAll();
-    Schedule updateContent(Schedule schedule);
-    void deleteById(Long id);
 }
